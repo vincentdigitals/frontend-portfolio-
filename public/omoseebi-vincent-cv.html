@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Omoseebi Vincent - Frontend Developer</title>
+  <style>
+    @page { size: A4; margin: 0; }
+    :root { color: #171b18; font-family: Arial, Helvetica, sans-serif; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #e9ede8; }
+    .page { width: 210mm; min-height: 297mm; margin: 0 auto; padding: 18mm 17mm; background: #fff; }
+    header { border-bottom: 2px solid #243c2a; padding-bottom: 13px; }
+    h1 { margin: 0 0 5px; color: #17291d; font-size: 31px; letter-spacing: -1px; }
+    .headline { margin: 0 0 9px; color: #507357; font-size: 13px; font-weight: 700; }
+    .contact { display: flex; flex-wrap: wrap; gap: 4px 16px; color: #475249; font-size: 9px; }
+    a { color: inherit; text-decoration: none; }
+    main { display: grid; grid-template-columns: 1fr 2.1fr; gap: 22px; padding-top: 18px; }
+    aside { border-right: 1px solid #d4ddd4; padding-right: 16px; }
+    section { margin-bottom: 18px; }
+    h2 { margin: 0 0 8px; color: #315b3c; font-size: 10px; letter-spacing: 1.4px; text-transform: uppercase; }
+    h3 { margin: 0; color: #202a22; font-size: 12px; }
+    p, li { color: #4f5951; font-size: 9.5px; line-height: 1.48; }
+    p { margin: 0 0 7px; }
+    ul { margin: 4px 0 0; padding-left: 15px; }
+    li { margin-bottom: 4px; }
+    .profile { font-size: 10px; line-height: 1.55; }
+    .role { display: flex; justify-content: space-between; gap: 12px; margin-bottom: 2px; }
+    .role span { color: #6c766d; font-size: 8px; white-space: nowrap; }
+    .company { margin-bottom: 5px; color: #52715a; font-size: 9px; font-weight: 700; }
+    .skills { margin: 0 0 10px; }
+    .skills strong { color: #263a2a; display: block; font-size: 9px; }
+    .project { margin-bottom: 12px; }
+    .project-title { display: flex; justify-content: space-between; gap: 12px; }
+    .project-title span { color: #6c766d; font-size: 8px; }
+    .footer { margin-top: 16px; padding-top: 8px; border-top: 1px solid #d4ddd4; color: #7a847c; font-size: 8px; }
+    @media print { body { background: #fff; } .page { margin: 0; } }
+    @media screen and (max-width: 800px) { .page { width: 100%; min-height: 0; padding: 28px 22px; } main { display: block; } aside { border-right: 0; border-bottom: 1px solid #d4ddd4; padding: 0 0 16px; margin-bottom: 18px; } }
+  </style>
+</head>
+<body>
+  <article class="page">
+    <header>
+      <h1>Omoseebi Vincent</h1>
+      <p class="headline">Frontend Developer · Product-minded</p>
+      <div class="contact">
+        <span>09038582747</span>
+        <a href="mailto:omoseebivincent@gmail.com">omoseebivincent@gmail.com</a>
+        <a href="https://www.linkedin.com/in/omoseebi-vincent/">linkedin.com/in/omoseebi-vincent</a>
+        <a href="https://github.com/vincen-coder">github.com/vincen-coder</a>
+      </div>
+    </header>
+    <main>
+      <aside>
+        <section>
+          <h2>Profile</h2>
+          <p class="profile">Frontend developer interested in building useful web products and understanding the problems behind them. My work sits at the intersection of frontend development and product thinking.</p>
+        </section>
+        <section>
+          <h2>Education</h2>
+          <h3>Tai Solarin Federal University of Education</h3>
+          <p>B.Sc. · 2022 - 2026</p>
+        </section>
+        <section>
+          <h2>Technical Skills</h2>
+          <p class="skills"><strong>Frontend Development</strong>JavaScript, React, Next.js, HTML, CSS, Tailwind CSS, Responsive Design</p>
+          <p class="skills"><strong>Development Tools</strong>Git, GitHub, Vite, Vercel, Firebase, Framer Motion</p>
+          <p class="skills"><strong>Working Knowledge</strong>TypeScript, REST APIs, PWA Development</p>
+          <p class="skills"><strong>Product & Collaboration</strong>Product Thinking, User Research, Product Discovery, Team Collaboration, Project Management</p>
+        </section>
+      </aside>
+      <div>
+        <section>
+          <h2>Professional Experience</h2>
+          <article>
+            <div class="role"><h3>Auvra</h3><span>Frontend Developer · January - Present</span></div>
+            <p class="company">Cultural resource coordination platform</p>
+            <p>Build and improve a platform focused on resource coordination and project workflows. Turn product requirements into responsive, interactive interfaces and connect the frontend to the underlying application through APIs.</p>
+          </article>
+          <article>
+            <div class="role"><h3>Enactus Tai Solarin University of Education</h3><span>Project Manager & Product Engineer</span></div>
+            <p class="company">Claive · Education workspace</p>
+            <p>Work across product development and team coordination, sitting between product research, product decisions, frontend development, and team coordination for a university-focused workspace.</p>
+          </article>
+          <article>
+            <div class="role"><h3>EdTech Center of Excellence</h3><span>Frontend Developer</span></div>
+            <p>Worked on education-focused digital products, translating requirements and designs into responsive web interfaces.</p>
+          </article>
+        </section>
+        <section>
+          <h2>Selected Projects</h2>
+          <article class="project"><div class="project-title"><h3>AUVRA - Cultural Resource Coordination Platform</h3><span>React.js · Vite</span></div><p>Responsive product interfaces for cultural resource coordination, project workflows, and API-connected experiences.</p></article>
+          <article class="project"><div class="project-title"><h3>MIXLR - Progressive Web Audio Recorder</h3><span>React · TypeScript · PWA</span></div><p>A browser-based audio recording experience designed for accessible, flexible capture across devices.</p></article>
+          <article class="project"><div class="project-title"><h3>READPDF - PDF-to-Speech Web Application</h3><span>JavaScript · PDF.js</span></div><p>Web application that turns PDF content into spoken audio using document parsing and the Web Speech API.</p></article>
+        </section>
+        <section>
+          <h2>Approach</h2>
+          <p>I care about what we are building, not just how it looks. I am interested in what a product is helping someone accomplish, where the experience becomes difficult, and whether the interface actually supports the problem being solved.</p>
+        </section>
+      </div>
+    </main>
+    <div class="footer">Omoseebi Vincent · Frontend Developer · Lagos, Nigeria</div>
+  </article>
+</body>
+</html>
