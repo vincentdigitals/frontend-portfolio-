@@ -51,12 +51,12 @@ export default function Home() {
         <div className={`nav-links ${menuOpen ? "is-open" : ""}`}>
           {["Home", "Experience", "Projects", "Approach", "Contact"].map((item) => <a key={item} href={`#${item.toLowerCase()}`} onClick={() => setMenuOpen(false)}>{item === "Home" ? "( Home )" : item}</a>)}
         </div>
-        <a className="button button-solid nav-cta" href="/omoseebi-vincent-cv.html" download>Download CV <ArrowUpRight size={15} /></a>
+        <a className="button button-solid nav-cta" href="/omoseebi-vincent-cv.docx" download>Download CV <ArrowUpRight size={15} /></a>
         <button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)} aria-label="Toggle menu">{menuOpen ? <X /> : <Menu />}</button>
       </nav>
 
       <section className="hero section-grid" id="home">
-        <Reveal className="hero-intro"><p className="eyebrow">Frontend / Product</p><h1>Frontend Developer.<br /><em>Product-minded.</em></h1><p className="hero-copy">I build responsive, usable web products with React, Next.js, and JavaScript. I care about more than getting an interface to look right - I think about the people using it, the problem the product is solving, and how the frontend can make that experience clearer and more effective.</p><div className="action-row"><a className="button button-outline" href="#projects">View my work <ArrowUpRight size={15} /></a><a className="text-link" href="/omoseebi-vincent-cv.html" download>Download my CV <ArrowUpRight size={15} /></a></div></Reveal>
+        <Reveal className="hero-intro"><p className="eyebrow">Frontend / Product</p><h1>Frontend Developer.<br /><em>Product-minded.</em></h1><p className="hero-copy">I build responsive, usable web products with React, Next.js, and JavaScript. I care about more than getting an interface to look right - I think about the people using it, the problem the product is solving, and how the frontend can make that experience clearer and more effective.</p><div className="action-row"><a className="button button-outline" href="#projects">View my work <ArrowUpRight size={15} /></a><span className="cv-action"><span className="cv-note">A small paper trail for the curious.</span><a className="text-link" href="/omoseebi-vincent-cv.docx" download>Download my CV <ArrowUpRight size={15} /></a></span></div></Reveal>
         <div className="portrait-wrap"><div className="portrait-ring"><img src="/portrait.jpg" alt="Portrait of Omoseebi Vincent" /></div><div className="orbit orbit-one" /><div className="orbit orbit-two" /><span className="portrait-label">Build with intent.</span></div>
         <Reveal className="hero-note"><span>01 / 03</span><p>A frontend developer who builds the interface, understands the product behind it, and thinks about the problem the interface is actually solving.</p></Reveal>
         <div className="hero-footer"><span>Based in Lagos, Nigeria</span><span>Scroll to explore <span className="scroll-line" /></span></div>
