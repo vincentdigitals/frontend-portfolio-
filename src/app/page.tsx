@@ -51,7 +51,7 @@ export default function Home() {
         <div className={`nav-links ${menuOpen ? "is-open" : ""}`}>
           {["Home", "Experience", "Projects", "Approach", "Contact"].map((item) => <a key={item} href={`#${item.toLowerCase()}`} onClick={() => setMenuOpen(false)}>{item === "Home" ? "( Home )" : item}</a>)}
         </div>
-        <a className="button button-solid nav-cta" href="/omoseebi-vincent-cv.docx" download>Download CV <ArrowUpRight size={15} /></a>
+        <a className="button button-solid nav-cta" href="/omoseebi-vincent-cv.docx" download>Download my CV <ArrowUpRight size={15} /></a>
         <button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)} aria-label="Toggle menu">{menuOpen ? <X /> : <Menu />}</button>
       </nav>
 
