@@ -27,9 +27,9 @@ const experiences = [
 ];
 
 const projects = [
-  ["01", "AUVRA", "Cultural Resource Coordination Platform.", "React.js, Tailwind CSS, Vite, Framer Motion, APIs"],
-  ["02", "MIXLR", "Progressive Web Audio Recorder.", "React, TypeScript, PWA"],
-  ["03", "READPDF", "PDF-to-Speech Web Application.", "JavaScript, PDF.js, Web Speech API"],
+  ["01", "AUVRA", "Cultural Resource Coordination Platform.", "React.js, Tailwind CSS, Vite, Framer Motion, APIs", "https://goauvra.com"],
+  ["02", "MIXLR", "Progressive Web Audio Recorder.", "React, TypeScript, PWA", "https://mixlrpwa.vercel.app/"],
+  ["03", "READPDF", "PDF-to-Speech Web Application.", "JavaScript, PDF.js, Web Speech API", "https://readpdfnow.vercel.app/"],
 ];
 
 const reveal: Variants = {
@@ -66,12 +66,12 @@ export default function Home() {
 
       <section className="section skills-band"><div className="section-heading"><span>03</span><h2>Skills stack</h2><p>The tools I use to turn product thinking into useful interfaces.</p></div><div className="skills-grid">{[["Frontend Development", "JavaScript · React · Next.js · HTML · CSS · Tailwind CSS · Responsive Design"], ["Development Tools", "Git · GitHub · Vite · Vercel · Firebase"], ["Working Knowledge", "TypeScript · REST APIs · PWA Development"], ["Product & Collaboration", "Product Thinking · User Research · Product Discovery · Team Collaboration · Project Management"]].map(([title, copy]) => <div className="skill-block" key={title}><h3>{title}</h3><p>{copy}</p></div>)}</div></section>
 
-      <section className="section section-rule" id="projects"><div className="section-heading"><span>04</span><h2>Selected projects</h2><p>A few products, experiments, and problems I have worked through.</p></div><div className="projects-list">{projects.map(([number, title, copy, skills]) => <Reveal className="project-item" key={title}><span>{number}</span><h3>{title}</h3><p>{copy}</p><small>{skills}</small><ArrowUpRight className="project-arrow" /></Reveal>)}</div></section>
+      <section className="section section-rule" id="projects"><div className="section-heading"><span>04</span><h2>Selected projects</h2><p>A few products, experiments, and problems I have worked through.</p></div><div className="projects-list">{projects.map(([number, title, copy, skills, href]) => <motion.a className="project-item" href={href} target="_blank" rel="noreferrer" variants={reveal} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.15 }} key={title}><span>{number}</span><h3>{title}</h3><p>{copy}</p><small>{skills}</small><ArrowUpRight className="project-arrow" /></motion.a>)}</div></section>
 
       <section className="section approach section-rule" id="approach"><div className="section-heading"><span>05</span><h2>Approach & about</h2></div><div className="approach-content"><Reveal><p className="display-copy">I care about what we&apos;re building, <em>not just how it looks.</em></p></Reveal><div><p>I&apos;m Omoseebi Vincent. I&apos;m a frontend developer interested in building useful web products and understanding the problems behind them. My work sits at the intersection of frontend development and product thinking.</p><p>Frontend development is where I spend most of my time, but I don&apos;t see the interface as something separate from the product. I&apos;m interested in what the product is helping someone accomplish, where the experience becomes difficult, and whether the interface actually supports the problem we&apos;re trying to solve.</p></div></div></section>
 
       <section className="contact section-rule" id="contact"><Reveal><p className="eyebrow">06 / Start a conversation</p><h2>Have a frontend<br /><em>problem to solve?</em></h2><p>I&apos;m interested in working on products where I can contribute to the frontend, collaborate with a team, and continue getting better through real product work.</p><a className="button button-solid" href="mailto:omoseebivincent@gmail.com">Get in touch <Mail size={15} /></a></Reveal><div className="contact-meta"><p>Beyond frontend engineering</p><a href="https://www.omoseebivincent.site/" target="_blank" rel="noreferrer">Check out my broader ventures, speaking engagements, and initiatives <ArrowUpRight size={15} /></a><div className="socials"><a href="https://www.linkedin.com/in/omoseebi-vincent/" target="_blank" rel="noreferrer" aria-label="LinkedIn"><FaLinkedinIn size={17} /></a><a href="https://github.com/vincen-coder" target="_blank" rel="noreferrer" aria-label="GitHub"><FaGithub size={17} /></a><a href="mailto:omoseebivincent@gmail.com" aria-label="Email"><Mail size={17} /></a></div></div></section>
-      <footer><span>Omoseebi Vincent © 2025</span><span>Designed and built with care</span></footer>
+      <footer><span>Omoseebi Vincent © {new Date().getFullYear()}</span><span>Designed and built with care</span></footer>
     </main>
   );
 }
